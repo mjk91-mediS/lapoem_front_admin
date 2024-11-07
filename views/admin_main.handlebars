@@ -1,0 +1,26 @@
+{{! # views : 뷰 템플릿 (HTML 템플릿 파일)
+# Admin 메인 페이지 템플릿 }}
+
+{{!-- Admin 대시보드 메인 페이지 --}}
+
+<div class="sidebar">
+    <ul>
+        {{#each sections}}
+        <li>
+            <span>{{name}}</span>
+            {{#if subItems.length}}
+            <ul>
+                {{#each subItems}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            {{/if}}
+        </li>
+        {{/each}}
+    </ul>
+</div>
+
+<div class="content">
+    <h2>{{memberInfo}}</h2>
+    <p>여기에 가입된 회원 목록이나 통계 정보를 표시할 수 있습니다.</p>
+</div>

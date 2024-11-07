@@ -1,0 +1,16 @@
+{
+  "name": "Lapoeme_admin",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "package.json": "^2.0.1",
+    "express": "^4.17.1",
+    "sequelize": "^6.6.2",
+    "mysql2": "^2.2.5",
+    "express-handlebars": "^5.3.3",
+    "body-parser": "^1.19.0"
+  }
+}
